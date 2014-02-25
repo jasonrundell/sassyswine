@@ -1,0 +1,107 @@
+// Mix-Fu by Jason Rundell @jasonrundell http://jasonrundell.com
+// https://github.com/jasonrundell/mix-fu
+// Repo : https://github.com/jasonrundell/mix-fu.git
+
+@mixin vendor-prefix($name, $argument)  {
+  -webkit-#{$name}: #{$argument};
+  -ms-#{$name}: #{$argument};
+  -moz-#{$name}: #{$argument};
+  -o-#{$name}: #{$argument};
+  #{$name}: #{$argument};
+}
+@mixin transition($args)  {
+  @include vendor-prefix(transition,$args);
+}
+@mixin b($args) {
+  bottom: $args;
+}
+@mixin bc($args) {
+  background-color: $args;
+}
+@mixin bor($args) {
+  border: $args;
+}
+@mixin borr($args) {
+  border-right: $args;
+}
+@mixin borl($args) {
+  border-left: $args;
+}
+@mixin bort($args) {
+  border-top: $args;
+}
+@mixin borb($args) {
+  border-bottom: $args;
+}
+@mixin c($args) {
+  color: $args;
+}
+@mixin cur($args) {
+  cursor: $args;
+}
+@mixin d($args) {
+  display: $args;
+}
+@mixin f($args) {
+  float: $args;
+}
+@mixin ff($args) {
+  font-family: $args;
+}
+@mixin fs($s) {
+  font-size: $s;
+}
+@mixin fw($args) {
+  font-weight: $args;
+}
+@mixin h($args) {
+  height: $args;
+}
+@mixin l($args) {
+  left: $args;
+}
+@mixin lh($args) {
+  line-height: $args;
+}
+@mixin ls($args) {
+  list-style: $args;
+}
+@mixin m($args) {
+  margin: $args;
+}
+@mixin mw($args) {
+  max-width: $args;
+}
+@mixin o($args) {
+  opacity: $args;
+}
+@mixin p($args) {
+  position: $args;
+}
+@mixin pad($args) {
+  padding: $args;
+}
+@mixin r($args) {
+  right: $args;
+}
+@mixin t($args) {
+  top: $args;
+}
+@mixin ta($args) {
+  text-align: $args;
+}
+@mixin td($args) {
+  text-decoration: $args;
+}
+@mixin tt($args) {
+  text-transform: $args;
+}
+@mixin v($args) {
+  visibility: $args;
+}
+@mixin w($args) {
+  width: $args;
+}
+@mixin z($z) {
+  z-index: $z;
+}

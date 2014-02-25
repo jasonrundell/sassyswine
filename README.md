@@ -2,7 +2,7 @@
 
 Gruntified task runner suite for AngularJS MVC web applications.
 
-Made with modern browsers in mind (you will have to build your own fallbacks).
+An opinionated development suite. Made with modern browsers in mind (no support for older browsers).
 
 ### Special thanks to [Todd Motto](https://github.com/toddmotto/) for building [FireShell](https://github.com/toddmotto/fireshell) which was what initially unlocked my discovery path into [Grunt](http://gruntjs.com/)!
 
@@ -20,13 +20,14 @@ Get started with Sassy Swine:
 Here are the main features of Sassy Swine:
 
 * [SASS](http://www.sass-lang.com/)
-* [jQuery 2.1.0](http://jquery.com/) / [Zepto 1.1.3](http://zeptojs.com/)
-* [AngularJS](http://angularjs.org/)
+* [jQuery 2.1.0](http://jquery.com/)
+* [Zepto 1.1.3](http://zeptojs.com/)
+* [jQuery UI 1.10.4](https://jqueryui.com/)
+* [AngularJS 1.2.13](http://angularjs.org/)
 * [Foundation 5.1.1](http://foundation.zurb.com/)
-* [Jade](http://jade-lang.com/)
-* [Require.js](http://requirejs.org/)
-* [Grunt](http://gruntjs.com/)
-* [LiveReload](https://www.npmjs.org/package/connect-livereload)
+* [Jade 0.10.0](http://jade-lang.com/)
+* [Grunt 0.4.2](http://gruntjs.com/)
+* [LiveReload 0.3.2](https://www.npmjs.org/package/connect-livereload)
 
 ## Scaffolding
 
