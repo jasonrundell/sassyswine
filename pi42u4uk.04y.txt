@@ -1,0 +1,4 @@
+﻿Getting close!
+Open is working. Removed CSS min package - I don't see the need with the ability to concat and min things with SASS.
+Reload is not working! Grr. Jade compiling is also not working! GRR!! 
+Readme updates and removed .jshintrc (opted to instead have it in gruntfile.js).

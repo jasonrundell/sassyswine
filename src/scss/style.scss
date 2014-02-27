@@ -1,4 +1,8 @@
 @import "normalize";
 @import "foundation/foundation";
-@import "mixins";
+@import "mix-fu";
 @import "app/app";
+
+body {
+  background-color: #000;
+}

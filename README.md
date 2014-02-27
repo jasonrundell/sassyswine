@@ -6,14 +6,15 @@ An opinionated development suite. Made with modern browsers in mind (no support 
 
 ### Special thanks to [Todd Motto](https://github.com/toddmotto/) for building [FireShell](https://github.com/toddmotto/fireshell) which was what initially unlocked my discovery path into [Grunt](http://gruntjs.com/)!
 
-## Jump start
+## Getting started with Sassy Swine
 
-Get started with Sassy Swine:
-
-1. Install [Node.js](http://nodejs.org/)
-2. Download the latest stable release of Sassy Swine. into the root directory of your new project
-3. Open Terminal or Command prompt with Node.js
-5. Run `grunt watch` and your browser should open up with your new project ready to go!
+1. Install [Node.js](http://nodejs.org/).
+2. Download the latest stable release of Sassy Swine into the root directory of your new project.
+3. Open Terminal or Command prompt with Node.js.
+4. Run `npm install` to install all the necessary modules for node.
+5. Run `grunt` and your browser should open up with your new project ready to go!
+6. Run `grunt build` to publish directly to your staging environment
+7. Run `grunt push` to publish directly to your production environment (use with wisdom!)
 
 ## Features
 
