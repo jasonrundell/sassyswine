@@ -13,7 +13,7 @@ An opinionated development suite. Made with modern browsers in mind (no support 
 3. Open Terminal or Command prompt with Node.js.
 4. Run `npm install` to install all the necessary modules for node.
 5. Run `grunt` and your browser should open up with your new project ready to go!
-6. Run `grunt build` to publish directly to your staging environment
+6. Run `grunt build` to publish directly to your staging environment.
 7. Run `grunt push` to publish directly to your production environment (use with wisdom!)
 
 ## Features
