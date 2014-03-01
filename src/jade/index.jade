@@ -1,12 +1,10 @@
-extends head
-block title
-  title Sassy Swine
-body
-    include ../menus/main
-    block main
-    include footer
-block main
-  div#wrapper
-    div.row
-      div.large-12
-        h1 Welcomessssssss
+doctype html
+html(lang='en' ng-app)
+  head
+    title Sassy Swine
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(href='/css/style.css', media='all', rel='stylesheet', type='text/css')
+  body
+    h1 It works...
+      em {{'SASSY' + '!'}}
+    script(src='/js/scripts.min.js')

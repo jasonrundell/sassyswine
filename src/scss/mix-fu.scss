@@ -18,6 +18,9 @@
 @mixin bc($args) {
   background-color: $args;
 }
+@mixin bi($args) {
+  background-image: $args;
+}
 @mixin bor($args) {
   border: $args;
 }

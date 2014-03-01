@@ -24,21 +24,6 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json'),
-
-    /**
-     * Set project info
-     */
-    project: {
-      src: 'src',
-      app: 'app',
-      css: [
-        '<%= project.src %>/scss/style.scss'
-      ],
-      js: [
-        '<%= project.src %>/js/*.js'
-      ]
-    },
 
     /**
      * Connect port/livereload
@@ -62,20 +47,16 @@ module.exports = function(grunt) {
 
     /**
      * Jade
-     * https://www.npmjs.org/package/grunt-contrib-jade
+     * https://github.com/gruntjs/grunt-contrib-jade
      * Node template engine
      */
     jade: {
       compile: {
-        options: {
-          data: {
-            client: false,
-            pretty: true,
-            debug: false
-          }
-        },
         files: {
-          '<%= project.app %>': ['<%= project.src %>/**/*.jade']
+          '<%= project.app %>/index.html': ['<%= project.src %>/jade/index.jade']
+        },
+        options: {
+          pretty: true
         }
       }
     },
@@ -86,8 +67,8 @@ module.exports = function(grunt) {
      * Manage the options inside .jshintrc file
      */
     jshint: {
-      jshint: {
-        all: ['Gruntfile.js', '<%= project.src %>/**/*.js']
+      files: {
+        all: ['Gruntfile.js', 'src/js/*.js']
       },
       options: {
         "node": true,
@@ -110,6 +91,7 @@ module.exports = function(grunt) {
         "strict": true,
         "trailing": false,
         "smarttabs": true,
+        "reporter": require('jshint-stylish'),
         "globals" : {
           "jQuery": true,
           "Modernizr": true
@@ -118,38 +100,29 @@ module.exports = function(grunt) {
     },
 
     /**
-     * Concatenate JavaScript files
-     * https://github.com/gruntjs/grunt-contrib-concat
-     * Imports all .js files and appends project banner
+     * Opens the web server in the browser
+     * https://github.com/jsoverson/grunt-open
      */
-    concat: {
-      dev: {
-        files: {
-          '<%= project.app %>/js/scripts.min.js': '<%= project.js %>'
-        }
-      },
-      options: {
-        stripBanners: true,
-        nonull: true,
-        banner: '<%= tag.banner %>'
+    open: {
+      server: {
+        path: 'http://localhost:<%= connect.options.port %>'
       }
     },
 
+    pkg: grunt.file.readJSON('package.json'),
+
     /**
-     * Project banner
-     * Dynamically appended to CSS/JS files
-     * Inherits text from package.json
+     * Set project info
      */
-    tag: {
-      banner: '/*!\n' +
-              ' * <%= pkg.name %>\n' +
-              ' * <%= pkg.title %>\n' +
-              ' * <%= pkg.url %>\n' +
-              ' * @author <%= pkg.author %>\n' +
-              ' * @version <%= pkg.version %>\n' +
-              ' * @repository <%= pkg.repository %>\n' +
-              ' * Copyright <%= pkg.copyright %>. <%= pkg.license %>\n' +
-              ' */\n'
+    project: {
+      src: 'src',
+      app: 'app',
+      css: [
+        '<%= project.src %>/scss/style.scss'
+      ],
+      js: [
+        '<%= project.src %>/js/*.js'
+      ]
     },
 
     /**
@@ -178,25 +151,37 @@ module.exports = function(grunt) {
     },
 
     /**
-     * Opens the web server in the browser
-     * https://github.com/jsoverson/grunt-open
+     * Project banner
+     * Dynamically appended to CSS/JS files
+     * Inherits text from package.json
      */
-    open: {
-      server: {
-        path: 'http://localhost:<%= connect.options.port %>'
-      }
+    tag: {
+      banner: '/*!\n' +
+              ' * <%= pkg.name %>\n' +
+              ' * <%= pkg.description %>\n' +
+              ' * <%= pkg.homepage %>\n' +
+              ' * @author <%= pkg.author %>\n' +
+              ' * @version <%= pkg.version %>\n' +
+              ' * @repository <%= pkg.repository.url %>\n' +
+              ' * @license <%= pkg.license %>\n' +
+              ' */\n'
     },
 
+    /**
+     * Uglify
+     * https://github.com/gruntjs/grunt-contrib-uglify
+     */
     uglify: {
-      options: {
-        banner: '<%= tag.banner %>'
-      },
-      dist: {
+      my_target: {
+        options: {
+          banner: '<%= tag.banner %>'
+        },
         files: {
-          '<%= project.app %>/js/scripts.min.js': '<%= project.js %>'
+          'app/js/scripts.min.js': ['src/js/*.js']
         }
       }
     },
+
 
     /**
      * Runs tasks against changed watched files
@@ -205,9 +190,13 @@ module.exports = function(grunt) {
      * Livereload the browser once complete
      */
     watch: {
-      concat: {
-        files: '<%= project.src %>/js/**/*.js',
-        tasks: ['concat:dev', 'jshint']
+      jshint: {
+        files: '<%= project.src %>/js/*.js',
+        tasks: ['jshint']
+      },
+      uglify: {
+        files: '<%= project.src %>/js/*.js',
+        tasks: ['uglify']
       },
       jade: {
         files: '<%= project.src %>/jade/**/*.jade',
@@ -244,8 +233,9 @@ module.exports = function(grunt) {
    */
   grunt.registerTask('default', [
     'sass:dev',
+    'jade',
+    'uglify',
     'jshint',
-    'concat:dev',
     'connect:livereload',
     'open',
     'watch'
@@ -256,9 +246,7 @@ module.exports = function(grunt) {
    * Run `grunt build` on the command line
    */
   grunt.registerTask('build', [
-    'sass:stage',
-    'jshint',
-    'uglify'
+    'sass:stage'
   ]);
 
   /**

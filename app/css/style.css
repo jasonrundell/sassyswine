@@ -1,11 +1,11 @@
 /*!
  * sassyswine
- * Sassy Swine
+ * Gruntified task runner suite for AngularJS MVC web applications.
  * http://sassyswine.com
- * @author Jason Rundell
- * @version 0.0.3
+ * @author Jason Rundell <contact@jasonrundell.com> (http://jasorundell.com/)
+ * @version 0.0.4
  * @repository http://github.com/jasonrundell/sassyswine.git
- * Copyright 2014. MIT https://github.com/jasonrundell/sassyswine/blob/master/LICENSE
+ * @license MIT
  */
 
 /*! normalize.css v2.1.2 | MIT License | git.io/normalize */
@@ -4540,8 +4540,4 @@ th.hide-for-touch {
 
 .touch th.show-for-touch {
   display: table-cell !important;
-}
-
-body {
-  background-color: #000;
 }
