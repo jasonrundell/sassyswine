@@ -4,6 +4,7 @@
 
 ## JetBrains
 .idea
+.sass-cache
 
 ## Node.js
 lib-cov
