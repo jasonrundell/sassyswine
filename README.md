@@ -21,10 +21,12 @@ An opinionated development suite. Made with modern browsers in mind (no support 
 Here are the main features of Sassy Swine:
 
 * [SASS](http://www.sass-lang.com/)
+* [jQuery 2.1.1](http://jquery.com/)
 * [jQuery 2.1.0](http://jquery.com/)
 * [Zepto 1.1.3](http://zeptojs.com/)
 * [jQuery UI 1.9.2](https://jqueryui.com/)
 * [jQuery UI 1.10.4](https://jqueryui.com/)
+* [AngularJS 1.3](http://angularjs.org/)
 * [AngularJS 1.2.13](http://angularjs.org/)
 * [Bootstrap SASS 3.1.1] [http://getbootstrap.com)
 * [Foundation 5.1.1](http://foundation.zurb.com/)
