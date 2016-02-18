@@ -2,7 +2,7 @@
     "name": "sassyswine",
     "description": "Gruntified task runner suite for AngularJS MVC web applications.",
     "homepage": "http://sassyswine.com",
-    "version": "1.0.2",
+    "version": "1.1",
     "repository": {
         "type": "git",
         "url": "http://github.com/jasonrundell/sassyswine.git"
