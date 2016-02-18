@@ -2,51 +2,47 @@
 
 Gruntified task runner suite for AngularJS MVC web applications.
 
-An opinionated development suite. Made with modern browsers in mind (no support for older browsers).
+An opinionated development suite. Made with modern browsers in mind (no support for older browsers planned).
 
 ### Special thanks to [Todd Motto](https://github.com/toddmotto/) for building [FireShell](https://github.com/toddmotto/fireshell) which was what initially unlocked my discovery path into [Grunt](http://gruntjs.com/)!
 
 ## Getting started with Sassy Swine
 
 1. Install [Node.js](http://nodejs.org/).
-2. Download the latest stable release of Sassy Swine into the root directory of your new project.
-3. Open Terminal or Command prompt with Node.js/Ruby.
-4. (ONLY AFTER YOUR FIRST CLONE) Run `npm install` to install all the necessary modules for node.
-5. Run `grunt` build local development quality assets and your browser should open up with your new project ready to go!
-6. Run `grunt build` to build production quality assets.
-7. (FUTURE FUNCTIONALITY) Run `grunt push` to publish directly to your production environment (use with wisdom!)
+2. `git clone https://github.com/jasonrundell/sassyswine` into the root directory of your new project.
+3. Run `npm install` to install all the necessary modules for node.
+4. Run `grunt` and your browser should open up with your new project ready to go!
+5. Run `grunt build` to publish directly to your staging environment.
+6. Run `grunt push` to publish directly to your production environment (use with wisdom!)
 
 ## Features
 
 Here are the main features of Sassy Swine:
 
+* [AngularJS 1.5.0](http://angularjs.org/)
+* [Grunt](http://gruntjs.com/)
+* [Jade](http://jade-lang.com/)
+* [LiveReload](https://www.npmjs.org/package/connect-livereload)
 * [SASS](http://www.sass-lang.com/)
-* [jQuery 2.1.1](http://jquery.com/)
-* [jQuery 2.1.0](http://jquery.com/)
-* [Zepto 1.1.3](http://zeptojs.com/)
-* [jQuery UI 1.9.2](https://jqueryui.com/)
-* [jQuery UI 1.10.4](https://jqueryui.com/)
-* [AngularJS 1.3](http://angularjs.org/)
-* [AngularJS 1.2.13](http://angularjs.org/)
-* [Bootstrap SASS 3.1.1] [http://getbootstrap.com)
-* [Foundation 5.1.1](http://foundation.zurb.com/)
-* [Foundation 5.2.2](http://foundation.zurb.com/)
-* [mix-fu 1.0.0](https://github.com/jasonrundell/mix-fu)
-* [normalize 2.1.2](git.io/normalize)
-* [normalize 3.0.0](git.io/normalize)
-* [Jade 0.10.0](http://jade-lang.com/)
-* [Grunt 0.4.5](http://gruntjs.com/)
-* [LiveReload 0.4.0](https://www.npmjs.org/package/connect-livereload)
-* [grunt-contrib-connect 0.7.1](https://www.npmjs.org/package/grunt-contrib-connect)
-* [grunt-contrib-jade 0.11.0](https://www.npmjs.org/package/grunt-contrib-jade)
-* [grunt-contrib-jshint 0.8.0](https://www.npmjs.org/package/grunt-contrib-jshint)
-* [grunt-contrib-nodeunit 0.4.0](https://www.npmjs.org/package/grunt-contrib-nodeunit)
-* [grunt-contrib-sass 0.7.3](https://www.npmjs.org/package/grunt-contrib-sass)
-* [grunt-contrib-uglify 0.4.0](https://www.npmjs.org/package/grunt-contrib-uglify)
-* [grunt-contrib-watch 0.6.1](https://www.npmjs.org/package/grunt-contrib-watch)
-* [grunt-open 0.2.3](https://www.npmjs.org/package/grunt-open)
-* [jshint-stylish 0.2.0](https://www.npmjs.org/package/jshint-stylish)
-* [matchdep 0.3.0](https://www.npmjs.org/package/matchdep)
+
+## Scaffolding
+
+````
+├── app
+├── src
+│   ├── jade
+│   │   └── index.jade
+│   ├── js
+│   │   └── 1-angular-1.5.0.js
+│   │   └── 2-app.js
+│   └── scss
+│       └── style.scss
+├── .editorconfig
+├── .gitignore
+├── Gruntfile.js
+├── LICENSE
+├── package.json
+├── README.md
 
 ````
 
@@ -62,10 +58,10 @@ Guidelines:
 
 ## Roadmap
 
-Projected road map for Sassy Swine:
+Projected roadmap for Sassy Swine and it's subsets builds:
 
-* Better Documentation on first-time setup of Node, Roby, SASS, etc on Windows
-* File uploads, gzip compression, and hashing for Amazon S3
+* File uploads, gipping, and hashing for Amazon S3
+* Documentation
 
 ## License
 
