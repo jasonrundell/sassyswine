@@ -33,7 +33,7 @@ The online works of [John Pappa](https://github.com/johnpapa) and [Mark Goodyear
 
 ## Features
 
-Here are the main features of Sassy Swine "Gulp!":
+Here are the main features of Sassy Swine:
 
 * [Gulp](http://gulpjs.com/)
 * [SASS](http://www.sass-lang.com/)
