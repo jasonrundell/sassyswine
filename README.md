@@ -1,49 +1,44 @@
-# Sassy Swine "Gulp!" Edition
+# Sassy Swine 2.0
 
-Sassy Swine "Gulp!" Edition is a Gulpified task runner suite for web development with AngularJS, SASS, and Jade. jQuery, LESS and other libraries can easily be added/removed/modified by moving files into their respective src/... folder. To switch out SASS for LESS, you'll need to modify the gulpfile.js file and add a gulp less package of your choice.
+Sassy Swine is a Gulpified task runner suite for quickly getting started on a new web project, using:
+ * [Gulp](http://gulpjs.com/)
+ * [SASS](http://www.sass-lang.com/)
+ * [AngularJS 1.5.8](http://angularjs.org/)
+ * [Pug](https://pugjs.org)
 
-The "Gulp!" Edition is a modified version of a Grunt version of SASSY Swine which is no longer receiving updates.
+## Special thanks to
+[Todd Motto](https://github.com/toddmotto/) for building [FireShell](https://github.com/toddmotto/fireshell) which was what initially unlocked my discovery path into [NPM](https://www.npmjs.com/) and [Grunt](http://gruntjs.com/)!
 
-### Special thanks to [Todd Motto](https://github.com/toddmotto/) for building [FireShell](https://github.com/toddmotto/fireshell) which was what initially unlocked my discovery path into [Grunt](http://gruntjs.com/)!
+The online works of [John Pappa](https://github.com/johnpapa) and [Mark Goodyear](https://gist.github.com/markgoodyear) were also massive help and inspiration.
 
-### The online works of [John Pappa](https://github.com/johnpapa) and [Mark Goodyear](https://gist.github.com/markgoodyear) were also massive help with getting this edition together.
+## Prerequisite software
+
+* [NodeJS](https://nodejs.org/)
+* [Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md)
+* [Ruby](http://rubyinstaller.org/) (Windows)
 
 ## Getting started
 
-1. Install [Node.js](http://nodejs.org/).
-2. Download the latest stable release of Sassy Swine into the root directory of your new project.
-3. Open Terminal or Command prompt with Node.js/Ruby.
-4. (ONLY AFTER YOUR FIRST CLONE) Run `npm install` to install all the necessary modules for node.
+1. Make sure you have installed the *Prerequisite Software*
+2. Clone/Download the latest stable release of Sassy Swine into the root directory of your new project.
+    ```
+    git clone git@github.com:jasonrundell/sassyswine.git new_project_folder
+    ```
+3. Open `new_project_folder` 
+4. (Mac/Linux) Open Terminal (Windows) Node/Ruby/Git Bash terminal and run `npm install` to install all the necessary modules for node.
 5. Run `gulp` and your browser should open up with your new project ready to go!
-6. Modify index.jade to begin to change the initial template for your web project. Saved changes to images, jade, sass, or javascript will automatically show in your browser without you needing to hit refresh
+6. Modify index.pug to begin to change the initial template for your web project. Saved changes to images, jade, sass, or javascript will automatically show in your browser without you needing to hit refresh
+7. Want to use Bootstrap? `npm install npm install bootstrap@3`
+8. Want to use Foundation? `npm install -g foundation-cli`
 
 ## Features
 
 Here are the main features of Sassy Swine "Gulp!":
 
-* [Gulp](http://www.sass-lang.com/)
+* [Gulp](http://gulpjs.com/)
 * [SASS](http://www.sass-lang.com/)
-* [AngularJS 1.2.13](http://angularjs.org/)
-* [mix-fu 1.0.0](https://github.com/jasonrundell/mix-fu)
-* [normalize 3.0.2](git.io/normalize)
-* [Jade](http://jade-lang.com/)
-* [GULP PACKAGES]
-* del
-* gulp-autoprefixer
-* gulp-cache
-* gulp-concat
-* gulp-connect
-* gulp-imagemin
-* gulp-jade
-* gulp-jshint
-* gulp-livereload
-* gulp-load-plugins
-* gulp-minify-css
-* gulp-notify
-* gulp-open
-* gulp-rename
-* gulp-sass
-* gulp-uglify
+* [AngularJS 1.5.8](http://angularjs.org/)
+* [Pug](https://pugjs.org)
 
 ````
 
@@ -56,13 +51,6 @@ Steps to contributing:
 
 Guidelines:
 * Non-trivial changes should be discussed an an [issue](https://github.com/jasonrundell/sassyswine/issues) first
-
-## Roadmap
-
-Projected road map for Sassy Swine:
-
-* Better Documentation on first-time setup of Node, Roby, SASS, etc on Windows
-* File uploads, gzip compression, and hashing for Amazon S3
 
 ## License
 

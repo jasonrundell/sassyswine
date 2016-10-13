@@ -1,11 +1,4 @@
 // Sassy Swine Styling
-// Main controller file of including other frameworks/helepers
+// Main controller file of including other frameworks/helpers
 // Just comment out what you need or include your own
 
-@import "mix-fu";
-@import "normalize";
-@import "bootstrap/bootstrap";
-
-div {
-  @extend .container;
-}
