@@ -1,35 +1,40 @@
 {
-    "name": "sassyswine",
-    "description": "Gruntified task runner suite for AngularJS MVC web applications.",
-    "homepage": "http://sassyswine.com",
-    "version": "1.1",
-    "repository": {
-        "type": "git",
-        "url": "http://github.com/jasonrundell/sassyswine.git"
-    },
-    "bugs": {
-        "url": "https://github.com/jasonrundell/sassyswine/issues",
-        "email": "contact@jasonrundell.com"
-    },
-    "license": "MIT",
-    "author": "Jason Rundell <contact@jasonrundell.com> (http://jasorundell.com/)",
-    "devDependencies": {
-        "connect-livereload": "~0.4.0",
-        "grunt": "~0.4.5",
-        "grunt-contrib-clean": "^0.6.0",
-        "grunt-contrib-connect": "~0.7.1",
-        "grunt-contrib-jade": "~0.11.0",
-        "grunt-contrib-jshint": "~0.8.0",
-        "grunt-contrib-nodeunit": "~0.4.0",
-        "grunt-contrib-sass": "~0.7.3",
-        "grunt-contrib-uglify": "~0.4.0",
-        "grunt-contrib-watch": "~0.6.1",
-        "grunt-open": "~0.2.3",
-        "jshint-stylish": "~0.2.0",
-        "matchdep": "~0.3.0"
-    },
-    "keywords": [
-        "sassyswine",
-        "sassy swine"
-    ]
+  "name": "sassyswinegulp",
+  "description": "Gruntified task runner suite for AngularJS MVC web applications.",
+  "homepage": "http://sassyswine.com",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/jasonrundell/sassyswine.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jasonrundell/sassyswine/issues",
+    "email": "contact@jasonrundell.com"
+  },
+  "license": "MIT",
+  "author": "Jason Rundell <contact@jasonrundell.com> (http://jasorundell.com/)",
+  "devDependencies": {
+    "angular": "^1.5.8",
+    "del": "^1.1.1",
+    "gulp": "^3.8.10",
+    "gulp-autoprefixer": "^2.0.0",
+    "gulp-cache": "^0.2.4",
+    "gulp-concat": "^2.4.3",
+    "gulp-connect": "^2.2.0",
+    "gulp-imagemin": "^2.1.0",
+    "gulp-jshint": "^1.9.0",
+    "gulp-livereload": "^3.2.0",
+    "gulp-load-plugins": "^0.8.0",
+    "gulp-notify": "^2.1.0",
+    "gulp-open": "^0.3.1",
+    "gulp-pug": "^3.1.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^1.0.2",
+    "node-sass": "^3.10.1"
+  },
+  "keywords": [
+    "sassyswine",
+    "sassy swine"
+  ]
 }

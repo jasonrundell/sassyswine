@@ -1,14 +1,10 @@
-# IDE Files
-/nbproject/
-.idea/*
-.editorconfig
+# SASSY Swine
+# http://jasonrundell.com/sassyswine
+# @author Jason Rundell
 
-## Sublime Text cache files
-*.tmlanguage.cache
-*.tmPreferences.cache
-*.stTheme.cache
-*.sublime-workspace
-*.sublime-project
+## JetBrains
+.idea
+.sass-cache
 
 ## Node.js
 lib-cov
@@ -25,12 +21,8 @@ results
 npm-debug.log
 node_modules
 
-## Bower
-bower_components
-
-## Sass, LESS, & CSS
+## Sass
 .sass-cache
-*.css.map
 
 ## OS X
 .DS_Store
