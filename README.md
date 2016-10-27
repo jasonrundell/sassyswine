@@ -1,4 +1,4 @@
-# Sassy Swine 2.0
+# Sassy Swine 2.1.0
 
 Sassy Swine is a Gulpified task runner suite for quickly getting started on a new web project, using:
  * [Gulp](http://gulpjs.com/)
