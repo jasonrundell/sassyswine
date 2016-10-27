@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
   sass = require('gulp-sass'),
+  sourcemaps = require('gulp-sourcemaps'),
   del = require('del');
 var gulpLoadPlugins = require('gulp-load-plugins');
 var plugins = gulpLoadPlugins();
@@ -13,7 +14,9 @@ var appBrowser = 'chrome'; // others: 'google-chrome' (Linux), 'chrome' (Windows
 // SASS
 gulp.task('sass', function() {
   return gulp.src(appSourceFolder + '/sass/style.scss')
+    .pipe(sourcemaps.init())
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(sourcemaps.write('../maps'))
     .pipe(gulp.dest(appDestinationFolder + '/css'))
     .pipe(plugins.connect.reload())
     .pipe(plugins.notify({ message: 'Styles task complete' }));
